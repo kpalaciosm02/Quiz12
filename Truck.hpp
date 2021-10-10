@@ -3,17 +3,19 @@
 using namespace std;
 
 #ifndef TRUCK
-#define TRUCk
+#define TRUCK
 class Truck{
     private:
         int speed;
-        string direction;
+        bool direction;
         bool started;
         int tankPercentage;
         int tankSize;
         int consumption;
     public:
-
+        Truck(int pSpeed, bool pDirection, bool pStarted, int pTankPercentage, int pTankSize, int pConsumption){
+            speed = pSpeed; direction = pDirection; started = pStarted; tankPercentage = pTankPercentage; tankSize = pTankSize; consumption = pConsumption; 
+        }
 };
 
 #endif
